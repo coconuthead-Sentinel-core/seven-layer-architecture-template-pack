@@ -1,0 +1,41 @@
+C4 MODEL DIAGRAMS TEMPLATE
+
+Use for
+- Planning the architecture visually at context, container, component, and optional code level.
+- Separating the system-of-interest from external actors and systems.
+
+Template
+1. System Context Diagram
+- System of interest: {system}
+- Primary users:
+  - {user}: {goals}
+- External systems:
+  - {external_system}: {relationship}
+- Key relationships:
+  - {A} -> {B}: {data/protocol}
+
+2. Container Diagram
+- Containers (apps / services / datastores):
+  - {container}: {responsibility} ({tech})
+- Relationships:
+  - {container_A} -> {container_B}: {purpose}
+
+3. Component Diagram (for key containers)
+- Container: {container}
+- Components:
+  - {component}: {responsibility}
+- Interfaces:
+  - {api/event/db}
+
+4. Code Diagram (optional)
+- Scope: {bounded_context_or_module}
+- Key classes / modules:
+  - {module}: {responsibility}
+
+Supporting diagrams (optional)
+- Dynamic diagram: {scenario}
+- Deployment diagram: {env}
+
+Notes
+- Keep each diagram scoped to its intended level.
+- Use consistent naming across C4, arc42, and ADRs.

@@ -1,0 +1,70 @@
+NIST AI RMF / LAYER 6 GOVERNANCE TEMPLATE
+
+Use for
+- Planning AI risk controls and governance framing for Layer 6 of the 7-layer architecture.
+- Documenting accountability, misuse cases, evaluation, and mitigation planning.
+
+System metadata
+- AI system name: {ai_system_name}
+- AI capability: {genai|ml|rules+ml}
+- Model(s): {model_names_versions}
+- Intended users: {users}
+- Deployment context: {where_used}
+
+1. GOVERN — governance and accountability
+- Roles and responsibilities:
+  - Owner: {name}
+  - Approver: {name}
+  - Security: {name}
+  - Legal / Privacy: {name}
+- Policies:
+  - Data handling: {policy}
+  - Model update / change control: {policy}
+- Logging / audit requirements:
+  - {requirements}
+
+2. MAP — context, purpose, and impact
+- Intended purpose:
+  - {purpose}
+- Misuse / abuse cases:
+  - {abuse_case}
+- Affected stakeholders:
+  - {stakeholder}
+- Harm types:
+  - Safety
+  - Privacy
+  - Bias
+  - IP
+  - Security
+  - Reliability
+
+3. MEASURE — evaluation and monitoring
+- Quality metrics:
+  - {metric}: {target}
+- Safety metrics:
+  - {metric}: {target}
+- Red teaming / adversarial testing:
+  - {approach}
+- Monitoring / drift:
+  - {signals}
+
+4. MANAGE — risk treatment and response
+- Controls / mitigations:
+  - {control}: {mapped_risk}
+- Incident response:
+  - Triggers: {trigger}
+  - Playbook: {steps}
+- Rollback / disable path:
+  - {how_to_disable}
+
+5. Data And Privacy
+- Data sources:
+  - {source}
+- PII handling:
+  - {policy}
+- Retention:
+  - {retention}
+
+Notes
+- Use this file for Layer 6 ethical firewall planning.
+- Tie risks here back to the Risk Register and Traceability Matrix.

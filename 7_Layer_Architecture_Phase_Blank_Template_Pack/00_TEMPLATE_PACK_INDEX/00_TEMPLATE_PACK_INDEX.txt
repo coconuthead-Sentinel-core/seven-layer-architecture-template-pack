@@ -1,0 +1,42 @@
+7-LAYER ARCHITECTURE PHASE BLANK TEMPLATE PACK
+
+Purpose
+- This folder is a blank project-local paperwork pack for the 7-layer architecture phase.
+- It is meant to be filled in for a real project.
+- It is separate from the shared Desktop Codex template library.
+
+What this pack contains
+- 01 Phase Gate
+- 02 Risk Register
+- 03 Traceability Matrix
+- 04 arc42 Architecture Record
+- 05 ADR / MADR Decision Records
+- 06 C4 Model Diagrams
+- 07 NIST AI RMF / Layer 6 Governance
+- 08 Phase Gate Checklist
+- 09 QA And Release Readiness Checklist
+
+How to use this pack
+1. Start with the Phase Gate template to define the current architecture-planning stage.
+2. Record known risks in the Risk Register.
+3. Track requirements-to-design-to-test linkage in the Traceability Matrix.
+4. Write the main architecture narrative in the arc42 file.
+5. Capture important architectural decisions in ADR / MADR format.
+6. Sketch the system using the C4 Model template.
+7. Plan AI governance and Layer 6 controls in the NIST AI RMF file.
+8. Use the checklists before moving to the next phase.
+
+Use for
+- Architecture planning
+- Pre-computation and profiling phase paperwork
+- Governance planning
+- Blank project initialization for the 7-layer system
+
+Template conventions
+- Keep placeholders inside curly braces until real project values are known.
+- Replace each placeholder deliberately.
+- Keep each package focused on one document type.
+
+Source note
+- These files were instantiated from the blank template library on 2026-04-30.
+- This pack is safe to fill in because it is outside the shared Desktop Codex source library.

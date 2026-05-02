@@ -1,0 +1,16 @@
+PHASE GATE CHECKLIST TEMPLATE
+
+Use for
+- Confirming that the architecture-planning phase gate is ready for review or approval.
+
+Checklist
+- [ ] Entry criteria are defined.
+- [ ] Required artifacts exist.
+- [ ] Owners are assigned.
+- [ ] Risks are recorded.
+- [ ] Exit criteria are measurable.
+- [ ] Approval path is known.
+
+Notes
+- Check each box only when evidence exists.
+- Use this with the Phase Gate template, not instead of it.

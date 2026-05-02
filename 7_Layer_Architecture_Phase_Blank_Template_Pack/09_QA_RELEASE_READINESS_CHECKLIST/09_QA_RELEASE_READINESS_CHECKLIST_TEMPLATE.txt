@@ -1,0 +1,16 @@
+QA AND RELEASE READINESS CHECKLIST TEMPLATE
+
+Use for
+- Preparing the project for later QA and release review.
+- This is included early so the architecture phase can preserve the evidence needed downstream.
+
+Checklist
+- [ ] Requirements map to implementation and tests.
+- [ ] Critical defects are dispositioned.
+- [ ] Release notes or handoff notes exist.
+- [ ] Evidence is attached for the release decision.
+- [ ] Known exclusions are recorded explicitly.
+- [ ] The next operator can resume work from the handoff packet.
+
+Notes
+- This checklist is typically completed later, but keeping it in the pack helps you plan for evidence from the start.

@@ -1,0 +1,38 @@
+MCP INTERFACE INVENTORY TEMPLATE
+
+Use for
+- Listing the actual MCP-facing interfaces a server will expose.
+- Keeping tool, resource, and prompt definitions clearly separated.
+
+Document metadata
+- Project name: {project_name}
+- MCP server name: {mcp_server_name}
+- Owner: {owner}
+- Date: {date}
+
+1. Tool Inventory
+| Tool Name | Purpose | Input Shape | Output Shape | Side Effects | Access Level |
+| --- | --- | --- | --- | --- | --- |
+|  |  |  |  |  |  |
+|  |  |  |  |  |  |
+
+2. Resource Inventory
+| Resource Name | URI Pattern | Purpose | Read/Write | Sensitivity | Notes |
+| --- | --- | --- | --- | --- | --- |
+|  |  |  |  |  |  |
+|  |  |  |  |  |  |
+
+3. Prompt Inventory
+| Prompt Name | Purpose | Required Inputs | Output Expectation | Audience |
+| --- | --- | --- | --- | --- |
+|  |  |  |  |  |
+|  |  |  |  |  |
+
+4. Roots / Context Inputs
+| Root Or Context Source | Purpose | Required | Notes |
+| --- | --- | --- | --- |
+|  |  |  |  |
+
+Notes
+- Keep this file strictly inventory-focused.
+- Put transport and security details in the dedicated MCP security template.

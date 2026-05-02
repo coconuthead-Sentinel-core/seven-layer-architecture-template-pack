@@ -1,0 +1,95 @@
+MCP SERVER SPECIFICATION TEMPLATE
+
+Use for
+- Documenting a planned MCP server in a project-readable format.
+- Defining purpose, lifecycle, transports, interfaces, boundaries, and supported capabilities.
+
+Important note
+- MCP has an official specification and schema, but not one single official blank planning form.
+- This file is a spec-derived documentation template intended for architecture and implementation planning.
+
+Document metadata
+- Project name: {project_name}
+- MCP server name: {mcp_server_name}
+- Owner: {owner}
+- Date: {date}
+- Status: {draft|review|approved}
+- MCP protocol version: {protocol_version}
+
+1. Server Purpose
+- Server name: {mcp_server_name}
+- Purpose: {what_this_server_exists_to_do}
+- Intended clients: {client_types}
+- Deployment context: {local|desktop|service|embedded}
+
+2. Scope
+- In scope:
+  - {scope_item_1}
+  - {scope_item_2}
+- Out of scope:
+  - {out_of_scope_item_1}
+
+3. Transport
+- Primary transport: {stdio|streamable_http}
+- Alternate transport: {if_any}
+- Endpoint or launch command:
+  - {command_or_url}
+- Session behavior:
+  - {stateless|stateful}
+
+4. Lifecycle
+- Initialization requirements:
+  - {initialize_requirements}
+- Session ID behavior:
+  - {session_id_rules}
+- Shutdown behavior:
+  - {shutdown_rules}
+- Error handling:
+  - {error_handling_approach}
+
+5. Exposed Interfaces
+- Tools:
+  - {tool_name}: {purpose}
+- Resources:
+  - {resource_name}: {purpose}
+- Prompts:
+  - {prompt_name}: {purpose}
+- Other capabilities:
+  - {capability_name}: {purpose}
+
+6. Data And Boundaries
+- Data sources:
+  - {data_source}
+- Write surfaces:
+  - {write_surface}
+- Restricted surfaces:
+  - {restricted_surface}
+- Trust boundary:
+  - {trust_boundary_description}
+
+7. Observability
+- Logging:
+  - {logging_rules}
+- Metrics:
+  - {metrics_rules}
+- Audit events:
+  - {audit_event_rules}
+
+8. Constraints
+- Technical constraints:
+  - {constraint}
+- Security constraints:
+  - {constraint}
+- Privacy constraints:
+  - {constraint}
+
+9. Validation Plan
+- Conformance checks:
+  - {check}
+- Integration checks:
+  - {check}
+- Abuse-case checks:
+  - {check}
+
+Suggested use in the 7-layer system
+- Use this template for MCP servers that expose local tools, data, and execution surfaces to higher-layer orchestration.

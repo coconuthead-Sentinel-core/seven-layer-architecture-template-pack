@@ -1,0 +1,64 @@
+MCP SECURITY AND TRANSPORT TEMPLATE
+
+Use for
+- Documenting how an MCP server handles transport, authentication, session rules, and boundary protections.
+- Making the security model explicit before implementation.
+
+Document metadata
+- Project name: {project_name}
+- MCP server name: {mcp_server_name}
+- Owner: {owner}
+- Date: {date}
+
+1. Transport Selection
+- Transport type: {stdio|streamable_http}
+- Why this transport was chosen:
+  - {reason}
+- If HTTP is used:
+  - Endpoint: {endpoint_url}
+  - Origin validation rule: {rule}
+  - Bind address rule: {localhost_or_other_rule}
+
+2. Authentication And Authorization
+- Auth model:
+  - {none|local_only|token|oauth|other}
+- Authorization model:
+  - {role_or_scope_model}
+- Required headers or session values:
+  - {header_or_value}
+
+3. Session Management
+- Session required: {yes_or_no}
+- Session identifier behavior:
+  - {behavior}
+- Session termination:
+  - {termination_rule}
+- Reconnection / resumability:
+  - {rule}
+
+4. Data Protection
+- Sensitive data classes:
+  - {data_class}
+- Logging exclusions:
+  - {what_must_not_be_logged}
+- Retention rule:
+  - {retention_rule}
+
+5. Abuse Prevention
+- Rate limiting:
+  - {rule}
+- Tool invocation limits:
+  - {rule}
+- Dangerous operation controls:
+  - {rule}
+
+6. Verification Checklist
+- [ ] Transport choice documented
+- [ ] Origin rules documented
+- [ ] Session rules documented
+- [ ] Auth model documented
+- [ ] Logging restrictions documented
+- [ ] Abuse controls documented
+
+Suggested use in the 7-layer system
+- Use this template for Layer 5 to Layer 6 boundary work where local MCP surfaces need explicit containment and auditability.

@@ -1,0 +1,121 @@
+A2A AGENT CARD TEMPLATE
+
+Use for
+- Defining the public discovery metadata for an A2A-compatible agent.
+- Publishing identity, interfaces, capabilities, media types, and skills for agent-to-agent communication.
+
+Important note
+- This template is based on the current public A2A specification and proto field structure.
+- Validate the final JSON against the current A2A spec before production use.
+
+Template metadata
+- Project name: {project_name}
+- Agent name: {agent_name}
+- Owner: {owner}
+- Date: {date}
+- Status: {draft|review|approved}
+
+Blank JSON-style template
+{
+  "name": "{agent_name}",
+  "description": "{agent_description}",
+  "supportedInterfaces": [
+    {
+      "url": "{https_url}",
+      "protocolBinding": "{JSONRPC|GRPC|HTTP+JSON}",
+      "tenant": "{tenant_if_used}",
+      "protocolVersion": "{a2a_protocol_version}"
+    }
+  ],
+  "provider": {
+    "organization": "{organization_name}",
+    "url": "{provider_url}"
+  },
+  "version": "{agent_version}",
+  "documentationUrl": "{documentation_url}",
+  "capabilities": {
+    "streaming": {true_or_false},
+    "pushNotifications": {true_or_false},
+    "extendedAgentCard": {true_or_false},
+    "extensions": [
+      {
+        "uri": "{extension_uri}",
+        "description": "{extension_description}",
+        "required": {true_or_false},
+        "params": {}
+      }
+    ]
+  },
+  "securitySchemes": {
+    "{scheme_key}": {
+      "{scheme_definition_placeholder}": "{fill_using_current_a2a_security_scheme_shape}"
+    }
+  },
+  "securityRequirements": [
+    {
+      "schemes": {
+        "{scheme_key}": [
+          "{scope_1}",
+          "{scope_2}"
+        ]
+      }
+    }
+  ],
+  "defaultInputModes": [
+    "{input_media_type_1}"
+  ],
+  "defaultOutputModes": [
+    "{output_media_type_1}"
+  ],
+  "skills": [
+    {
+      "id": "{skill_id}",
+      "name": "{skill_name}",
+      "description": "{skill_description}",
+      "tags": [
+        "{tag_1}",
+        "{tag_2}"
+      ],
+      "examples": [
+        "{example_prompt_1}"
+      ],
+      "inputModes": [
+        "{input_media_type_1}"
+      ],
+      "outputModes": [
+        "{output_media_type_1}"
+      ],
+      "securityRequirements": [
+        {
+          "schemes": {
+            "{scheme_key}": [
+              "{scope_1}"
+            ]
+          }
+        }
+      ]
+    }
+  ],
+  "iconUrl": "{icon_url}"
+}
+
+Field purpose guide
+- name:
+  Human-readable agent name.
+- description:
+  What the agent does and when another agent should use it.
+- supportedInterfaces:
+  Where and how this agent can be reached.
+- capabilities:
+  Streaming, push, extended-card, and extension behavior.
+- securitySchemes:
+  Auth methods supported by this agent.
+- securityRequirements:
+  What auth/scopes are required to call the agent.
+- defaultInputModes / defaultOutputModes:
+  Media types used by default.
+- skills:
+  The focused capabilities this agent exposes.
+
+Suggested use in the 7-layer system
+- Use this for Layer 5 peer-agent discovery and coordination metadata.

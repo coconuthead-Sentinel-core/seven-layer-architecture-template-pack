@@ -1,0 +1,30 @@
+PHASE GATE TEMPLATE
+
+Use for
+- Defining the current stage gate for the 7-layer architecture phase.
+- Recording entry criteria, exit criteria, required artifacts, approvals, and status.
+
+Document metadata
+- Project name: {project_name}
+- System name: {system_name}
+- Phase: {phase_name}
+- Owner: {owner}
+- Date: {date}
+- Status: {draft|review|approved}
+
+Template
+- Phase:
+- Objective:
+- Inputs:
+- Required artifacts:
+- Required approvals:
+- Entry criteria:
+- Exit criteria:
+- Risks:
+- Evidence links:
+- Status:
+
+Notes
+- Use measurable exit criteria.
+- Link supporting artifacts when they exist.
+- Update status whenever the gate changes.

@@ -1,0 +1,78 @@
+A2A SIGNED AGENT CARD TEMPLATE
+
+Use for
+- Extending the A2A Agent Card with signature placeholders for identity verification and trust.
+- Planning a signed card before implementing signing infrastructure.
+
+Important note
+- This is a planning template.
+- Do not place real secrets, private keys, or tokens in this file.
+
+Template metadata
+- Project name: {project_name}
+- Agent name: {agent_name}
+- Signing owner: {owner}
+- Date: {date}
+- Status: {draft|review|approved}
+
+Template
+{
+  "name": "{agent_name}",
+  "description": "{agent_description}",
+  "supportedInterfaces": [
+    {
+      "url": "{https_url}",
+      "protocolBinding": "{JSONRPC|GRPC|HTTP+JSON}",
+      "protocolVersion": "{a2a_protocol_version}"
+    }
+  ],
+  "provider": {
+    "organization": "{organization_name}",
+    "url": "{provider_url}"
+  },
+  "version": "{agent_version}",
+  "capabilities": {
+    "streaming": {true_or_false},
+    "pushNotifications": {true_or_false},
+    "extendedAgentCard": {true_or_false}
+  },
+  "defaultInputModes": [
+    "{input_media_type}"
+  ],
+  "defaultOutputModes": [
+    "{output_media_type}"
+  ],
+  "skills": [
+    {
+      "id": "{skill_id}",
+      "name": "{skill_name}",
+      "description": "{skill_description}",
+      "tags": [
+        "{tag_1}"
+      ]
+    }
+  ],
+  "signatures": [
+    {
+      "protected": "{base64url_jws_protected_header}",
+      "signature": "{base64url_signature}",
+      "header": {
+        "kid": "{key_id}",
+        "alg": "{signing_algorithm}"
+      }
+    }
+  ]
+}
+
+Use this for
+- Signed discovery metadata
+- Trust bootstrap
+- Validation planning
+- Layer 5 trust-boundary documentation
+
+Checklist before real use
+- [ ] Production HTTPS URL chosen
+- [ ] Signing algorithm selected
+- [ ] Key management process defined
+- [ ] Verification process defined
+- [ ] Security review completed

@@ -1,0 +1,28 @@
+RISK REGISTER TEMPLATE
+
+Use for
+- Logging architectural, governance, performance, safety, privacy, and delivery risks for the 7-layer system.
+
+Document metadata
+- Project name: {project_name}
+- Owner: {owner}
+- Date opened: {date_opened}
+- Last updated: {last_updated}
+
+Template table
+| Risk ID | Description | Likelihood | Impact | Owner | Mitigation | Status |
+| --- | --- | --- | --- | --- | --- | --- |
+| R-001 |  |  |  |  |  |  |
+| R-002 |  |  |  |  |  |  |
+| R-003 |  |  |  |  |  |  |
+
+Suggested status values
+- Open
+- Monitoring
+- Mitigated
+- Accepted
+- Closed
+
+Notes
+- Use one row per real risk.
+- Keep risk wording specific and testable.

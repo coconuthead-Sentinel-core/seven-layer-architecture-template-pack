@@ -1,0 +1,28 @@
+TRACEABILITY MATRIX TEMPLATE
+
+Use for
+- Connecting requirements to design artifacts, implementation targets, tests, and evidence.
+- Proving that important architectural and governance requirements were not lost.
+
+Document metadata
+- Project name: {project_name}
+- Owner: {owner}
+- Date: {date}
+
+Template table
+| Requirement | Design Artifact | Implementation | Test | Evidence | Status |
+| --- | --- | --- | --- | --- | --- |
+|  |  |  |  |  |  |
+|  |  |  |  |  |  |
+|  |  |  |  |  |  |
+
+Suggested status values
+- Planned
+- In progress
+- Verified
+- Blocked
+- Deferred
+
+Notes
+- Use requirement IDs if they exist.
+- Link architecture docs and test evidence explicitly.

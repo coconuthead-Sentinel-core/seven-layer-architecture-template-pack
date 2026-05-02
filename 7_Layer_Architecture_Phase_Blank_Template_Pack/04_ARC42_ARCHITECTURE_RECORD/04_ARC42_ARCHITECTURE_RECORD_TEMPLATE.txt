@@ -1,0 +1,89 @@
+ARC42 ARCHITECTURE RECORD TEMPLATE
+
+Use for
+- Writing the primary architecture narrative for the 7-layer system.
+- Capturing goals, constraints, context, solution strategy, building blocks, runtime flows, deployment, and crosscutting concepts.
+
+Document metadata
+- System: {system_name}
+- Version: {doc_version}
+- Date: {date}
+- Authors: {authors}
+- Status: {draft|review|approved}
+
+1. Introduction And Goals
+1.1 Requirements overview
+- {summary}
+
+1.2 Quality goals (top 3-5)
+- {quality_goal_1}
+- {quality_goal_2}
+- {quality_goal_3}
+
+1.3 Stakeholders
+- {stakeholder}: {expectations}
+
+2. Constraints
+2.1 Technical constraints
+- {constraint}
+
+2.2 Organizational constraints
+- {constraint}
+
+2.3 Regulatory / compliance constraints
+- {constraint}
+
+3. Context And Scope
+3.1 Business context
+- Users: {user_types}
+- External systems: {external_systems}
+
+3.2 Technical context
+- Inbound interfaces: {inbound_interfaces}
+- Outbound interfaces: {outbound_interfaces}
+- Protocols / data formats: {protocols_formats}
+
+4. Solution Strategy
+- Key architectural decisions (summary):
+  - {decision_summary}
+- Technology choices:
+  - {tech_stack}
+- Quality goal tactics:
+  - {how_quality_goals_are_met}
+
+5. Building Block View
+5.1 Level 1: Whitebox overall system
+- Primary components / modules:
+  - {module}: {responsibility}
+
+5.2 Level 2: Key subsystems
+- {subsystem}: {responsibility}
+
+5.3 Level 3: Critical components
+- {component}: {responsibility}
+
+6. Runtime View
+- Scenario: {scenario_name}
+  - Trigger: {trigger}
+  - Steps:
+    1) {step}
+  - Failure modes:
+    - {failure}
+
+7. Deployment View
+- Environments: {dev|test|prod}
+- Nodes:
+  - {node}: {purpose}
+- Network boundaries:
+  - {boundary}
+
+8. Crosscutting Concepts
+- Security: {approach}
+- Observability: {approach}
+- Data management: {approach}
+- Privacy: {approach}
+- Governance: {approach}
+
+Notes
+- Use this as the main architecture record.
+- Link ADRs and C4 diagrams where appropriate.

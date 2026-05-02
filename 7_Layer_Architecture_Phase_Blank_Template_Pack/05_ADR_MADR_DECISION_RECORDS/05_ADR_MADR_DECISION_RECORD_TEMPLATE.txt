@@ -1,0 +1,60 @@
+ADR / MADR DECISION RECORD TEMPLATE
+
+Use for
+- Recording one meaningful architecture decision per file or per section.
+- Explaining why a decision was made and what tradeoffs were accepted.
+
+File naming recommendation
+- YYYYMMDD-short-decision-title.txt
+
+Template
+# {ADR Title}
+
+## Context And Problem Statement
+- {what_problem_are_we_solving}
+- {drivers_constraints}
+
+## Decision Drivers
+- {driver_1}
+- {driver_2}
+
+## Considered Options
+1. {option_1}
+2. {option_2}
+3. {option_3}
+
+## Decision Outcome
+Chosen option: {option_n}
+
+### Positive Consequences
+- {pro_1}
+
+### Negative Consequences
+- {con_1}
+
+## Pros And Cons Of The Options
+### {option_1}
+- Pros:
+  - {pro}
+- Cons:
+  - {con}
+
+### {option_2}
+- Pros:
+  - {pro}
+- Cons:
+  - {con}
+
+### {option_3}
+- Pros:
+  - {pro}
+- Cons:
+  - {con}
+
+## Links
+- Related ADRs: {links}
+- Related docs: {links}
+
+Notes
+- Keep each ADR small and specific.
+- Create multiple ADRs instead of one giant decision log.
